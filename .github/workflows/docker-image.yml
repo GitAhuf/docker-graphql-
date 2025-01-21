@@ -30,7 +30,7 @@ jobs:
         docker build -t recibosalvaro/docker-graphql:0.0.2 .
     - name: Push Docker Image
       run: |
-        docker push recibosalvaro/docker-graphql:0.0.2 .
+        docker push recibosalvaro/docker-graphql:0.0.2
     # docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     # echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USER" --password-stdin
     # - name: Build the Docker image
