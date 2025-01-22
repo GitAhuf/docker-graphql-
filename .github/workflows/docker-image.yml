@@ -37,6 +37,7 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
+        echo "Building version: $NEW_VERSION"
         docker build -t recibosalvaro/docker-graphql:$NEW_VERSION .
         docker build -t recibosalvaro/docker-graphql:latest .
         
@@ -44,6 +45,7 @@ jobs:
       env: 
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
+        echo "Building version: $NEW_VERSION"
         docker push recibosalvaro/docker-graphql:$NEW_VERSION
         docker push recibosalvaro/docker-graphql:latest
         
