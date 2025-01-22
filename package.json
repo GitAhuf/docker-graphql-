@@ -1,6 +1,6 @@
 {
   "name": "todo",
-  "version": "1.1.1-rc-10",
+  "version": "1.1.1-rc-9",
   "description": "",
   "author": "",
   "private": true,
@@ -59,7 +59,8 @@
     "moduleFileExtensions": [
       "js",
       "json",
-      "ts"
+      "ts",
+      "tsx"
     ],
     "rootDir": "src",
     "testRegex": ".*\\.spec\\.ts$",
